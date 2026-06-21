@@ -37,3 +37,5 @@ Abre:
 ```text
 http://localhost:5173
 ```
+
+Integración Travis CI configurada para la entrega 3.
