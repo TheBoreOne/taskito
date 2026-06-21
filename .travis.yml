@@ -1,0 +1,17 @@
+language: node_js
+
+node_js:
+  - "22"
+
+services:
+  - docker
+
+install:
+  - npm install
+
+script:
+  - npm run build
+  - docker build -t taskito-docker .
+
+after_success:
+  - docker images | grep taskito-docker
